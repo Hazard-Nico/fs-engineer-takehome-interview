@@ -1,0 +1,10 @@
+flask
+flask-sqlalchemy
+python-dotenv
+flask_swagger_ui
+Flask-JWT-Extended
+flask_cors
+Flask-Mail
+Flask-Migrate
+pymysql
+gunicorn
