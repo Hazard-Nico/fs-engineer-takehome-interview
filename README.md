@@ -17,7 +17,29 @@ This is a full-stack application built with Next.js (Frontend) and Flask (Backen
 - [Docker Compose](https://docs.docker.com/compose/install/) installed
 
 ## Project Structure
-. ├── backend │ ├── app.py # Flask backend │ ├── models.py # SQLAlchemy models │ ├── Dockerfile ├── frontend │ ├── pages │ │ └── index.js # Next.js frontend │ ├── public │ ├── Dockerfile ├── docker-compose.yml # Docker compose for orchestration └── README.md 
+```plaintext
+.
+├── server
+│   ├── app
+|   │   ├── models
+│   │   |     └── Profile.js  # Profile models
+│   │   └── __init__.py      # Initialization file
+│   ├── server.py               # Flask backend
+│   ├── requirements.txt     # Python dependencies
+│   ├── Dockerfile           # Backend Dockerfile
+│   └── .env                 # Flask environment variables (optional)
+│   └── config.py            # Flask Config file
+
+├── client
+│   ├── app
+│   │   └── page.tsx         # Next.js frontend
+│   ├── public               # Public assets for Next.js
+│   ├── package.json         # Frontend dependencies
+│   ├── Dockerfile           # Frontend Dockerfile
+├── docker-compose.yml        # Docker compose for orchestration
+└── README.md                # Instructions for the project
+
+```
 
 # Project instructions
 ## Installation
